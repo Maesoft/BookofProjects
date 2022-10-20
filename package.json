@@ -1,0 +1,23 @@
+{
+  "name": "maesoft",
+  "version": "1.0.0",
+  "description": "maesoft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maesoft/projectbook.git"
+  },
+  "author": "Matias A. Eguia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maesoft/projectbook/issues"
+  },
+  "homepage": "https://github.com/Maesoft/projectbook#readme",
+  "dependencies": {
+    "@types/node": "^18.11.2",
+    "readline-sync": "^1.4.10"
+  }
+}
