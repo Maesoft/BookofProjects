@@ -10,49 +10,92 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
-    <div class="container">
-        
+  <header>
+    <div class="header-container">
+        <img src=".\img\logo.png" alt="Logo">
+        <div class="text-header">
+        <h1>La Caceta</h1>
+        <p>El diario de la gente.</p>
+      </div>
     </div>
-    <div class="container">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <img src=".\img\logo.png" alt="Logo">
-          <a class="navbar-brand" href="#">NOTICIAS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contáctenos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Temas
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Deportes</a></li>
-                  <li><a class="dropdown-item" href="#">Politica</a></li>
-                  <li><a class="dropdown-item" href="#">Economia</a></li>
-                  <li><a class="dropdown-item" href="#">Policiales</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Clima</a></li>
+        <div class="nav-container">
+           <nav class="navbar navbar-expand-lg">
+             <div class="container">
+              <a class="navbar-brand" href="#">HOY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctenos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Temas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Deportes</a></li>
+                      <li><a class="dropdown-item" href="#">Politica</a></li>
+                      <li><a class="dropdown-item" href="#">Economia</a></li>
+                      <li><a class="dropdown-item" href="#">Policiales</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Clima</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Sorteo</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Sorteo</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+              </div>
+            </div>
+        </nav>
         </div>
-    </nav>
-</div>
+  </header>
+  <main class="container">
+    <h3>Boca Juniors es el nuevo campeón de la Liga Profesional</h2>
+    <p>El equipo de Ibarra igualó 2 a 2 ante Independiente en La Bombonera, y como Racing perdió 2-1 ante River Plate , se quedó con el título.</p>
+    <div class="main-container">
+      <div class="col1">
+          <img src=".\img\boca.png" alt="Boca">
+          <p>El Xeneize, campeón también de la Copa de la Liga, sumó 52 puntos en el torneo. De sus últimos 16 partidos, solo perdió uno y ganó 12, un sprint final que le permitió al conjunto de La Ribera festejar este domingo. Ahora, el elenco de Hubo Ibarra tendrá dos obejtivos: la semifinal de la Copa Argentina ante Patronato y la final del trofeo de campeones que jugará contra Tigre o Racing.</p>
+      </div>
+      <div class="col2">
+        <h3>Noticias mas leidas</h3>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Noticia</a></li>
+      </div>
+    </div>
+    <div class="carrusel">
+      <h3>Algunas de las imagenes que dejo la jornada.</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src=".\img\image1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src=".\img\image2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src=".\img\image3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+  </main>
 </body>
 </html>
