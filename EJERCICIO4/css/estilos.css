@@ -1,5 +1,10 @@
-img{
-    width: 128px;;
+.header-container img{
+    width: 150px;
+    margin-right: 40px;
+}
+.header-container p{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header-container{
     display: flex;
@@ -12,7 +17,7 @@ img{
 h1{
     margin-bottom: 0px;
     margin-top: 15px;
-    font-size: 50px;
+    font-size: 100px;
 }
 .text-header{
     display: flex;
@@ -38,7 +43,7 @@ h1{
     flex-direction: column;
     padding: 10px;
     margin-left: 40px;
-    /*border: 1px solid black;*/
+    border: 1px dotted black;
 }
 .col1 p{
     margin-left: 10px;
@@ -50,4 +55,27 @@ h1{
 .carrusel{
     margin-top: 30px;
     width: 640px;
+}
+body{
+    background-color: rgb(189, 189, 189);
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a:hover{
+    color: red;
+}
+
+li{
+    margin-bottom: 10px;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
 }
