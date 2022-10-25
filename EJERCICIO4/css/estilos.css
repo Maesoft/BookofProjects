@@ -70,6 +70,7 @@ a:hover{
 
 li{
     margin-bottom: 10px;
+    font-size: 18px;
 }
 .footer-container{
     display: flex;
