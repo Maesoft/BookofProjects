@@ -1,0 +1,19 @@
+.container{
+    background-color: black;
+    color: rgb(236, 98, 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 512px;
+}
+body{
+    background-color: black;
+}
+h5{
+    text-align: center;
+}
+
+#btn{
+    margin: 5px;
+}
