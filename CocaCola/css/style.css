@@ -80,27 +80,34 @@ header .container nav a:hover{
     height: 650px;
 }
 #nosotros p {
-    position:absolute;
-    margin-top: 15%;
-    padding: 20px;
-    padding-left: 500px;
     font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.349);
     color: white;
-    width: 75%;
-    border-radius: 20px;
+    width: 40%;
+    margin: auto 10px auto 10px;
 }
 #nosotros img {
     z-index: 1;
-    position: relative;
-    margin-left: 5%;
-    margin-top: 15%;
-    width: 29%;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 35%;
+    border: 5px dotted black;
     opacity: 0.8;
+    margin-right: 5%;
 }
 #nosotros .container{
- justify-content:space-between;
- margin-left: 10%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    justify-content:center;
+}
+.container .tarjeta{
+    align-items: flex-start;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.tarjeta img{
+    width: 343px;
+    height: 192px;
 }
