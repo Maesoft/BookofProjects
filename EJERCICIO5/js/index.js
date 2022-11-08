@@ -30,4 +30,5 @@ btn2.addEventListener("click", ()=>{
 btn3.addEventListener("click", ()=>{
     contador=0;
     resultado.innerText=contador;
+    mensaje=false;
 })
