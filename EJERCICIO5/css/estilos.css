@@ -13,7 +13,7 @@ p{
 }
 
 .boton{
-    cursor:auto;
+    cursor:pointer;
     display: inline;
     width: 100px;
     height: 40px;
