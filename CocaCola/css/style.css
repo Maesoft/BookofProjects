@@ -120,4 +120,33 @@ header .container nav a:hover{
 .tarjeta img{
     width: 400px;
 }
+#contactenos{
+    background-color: black;
+    align-items: center;
+}
+#contactenos h2{
+    color: white;
+    align-self: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contactenos .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.185);
+    width: 512px;
+    height: 300px;
+    padding: 20px;
+}
+
+#txt{
+    height: 150px;
+}
