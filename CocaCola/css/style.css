@@ -23,13 +23,20 @@ header .container{
     background-color: white;
     border-bottom: 1px solid black;
 }
+header .container nav{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+}
 header .container nav a{
     margin: 0px 30px;
     color: rgba(255, 0, 0, 0.733);
     background-color: white;
 }
 header .container nav a:hover{
-    
+    margin: 0px 0px;
     color: white;
     background-color: rgba(255, 0, 0, 0.733);
     border-radius: 10px;
@@ -149,4 +156,17 @@ header .container nav a:hover{
 
 #txt{
     height: 150px;
+}
+
+#galeria img{
+width: 33%;
+height: 250px;
+}
+
+#galeria .container{
+    flex-direction: column;
+
+
+
+
 }
