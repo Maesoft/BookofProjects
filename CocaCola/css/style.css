@@ -31,12 +31,12 @@ header .container nav{
     height: 60px;
 }
 header .container nav a{
-    margin: 0px 30px;
     color: rgba(255, 0, 0, 0.733);
     background-color: white;
+    padding: 5px;
+    margin-inline: 20px;
 }
 header .container nav a:hover{
-    margin: 0px 0px;
     color: white;
     background-color: rgba(255, 0, 0, 0.733);
     border-radius: 10px;
@@ -54,9 +54,8 @@ header .container nav a:hover{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 10%;
     background-color: rgba(0, 0, 0, 0.575);
     left: auto;
     border: 1px solid rgba(0, 0, 0, 0.342);
@@ -70,7 +69,13 @@ header .container nav a:hover{
     text-align: center;
     margin: 0%;
 }
-
+.bloque-inicio img{
+    width: 150px;
+}
+.amplio{
+    width: 1500px;
+    height: 480px;
+}
 .boton{
     padding: 10px;
     width: 100px;
@@ -84,7 +89,7 @@ header .container nav a:hover{
 #nosotros{
     background-image: url(../img/latas.jpg);
     background-size: cover;
-    height: 650px;
+    height: 800px;
 }
 #nosotros p {
     font-size: 1.5em;
@@ -165,8 +170,4 @@ height: 250px;
 
 #galeria .container{
     flex-direction: column;
-
-
-
-
 }
