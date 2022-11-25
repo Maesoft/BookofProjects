@@ -61,11 +61,12 @@ header .container nav a:hover{
 }
 
 .bloque-inicio{
+    position: relative;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    top: 6vw;
     background-color: rgba(0, 0, 0, 0.575);
     left: auto;
     border: 1px solid rgba(0, 0, 0, 0.342);
@@ -77,7 +78,6 @@ header .container nav a:hover{
     font-size: 1.3vw;
     padding: 10px;
     text-align: center;
-    margin: 0%;
 }
 .bloque-inicio img{
     width: 16vw;
@@ -93,7 +93,7 @@ header .container nav a:hover{
     color: white;
     border-radius: 10px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.8vw;
     margin-bottom: 10px;
 }
 #nosotros{
@@ -122,6 +122,8 @@ header .container nav a:hover{
 }
 
 #servicios .container{
+    position: relative;
+    top: 5vw;
     padding: auto 10px;
 }
 .tarjeta{
@@ -180,13 +182,24 @@ header .container nav a:hover{
     height: 150px;
 }
 
-#promociones img{
-width: 32%;
-height: 30vw;
+#promociones .container img{
+width: 30vw;
+height: 20vw;
+filter: grayscale(1);
+}
+#promociones img:hover{
+width: 30vw;
+height: 20vw;
+filter: grayscale(0);
+cursor: pointer;
 }
 
 #promociones .container{
+    position: relative;
+    top: 5vw;
     flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
 }
 
 footer .container{
@@ -194,6 +207,7 @@ footer .container{
     background-color: black;
     color:white;  
 }
+
 footer img{
     width: 20vw;
-}
+}   
