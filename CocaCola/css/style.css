@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto";
 }
 a{
     text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+p{
+    font-family: "Roboto" ;
+    font-weight: 300;
+    font-size: 1.2vw;
 }
 .container{
-    padding: 15px;
+    padding: 1.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header .container img{
-width: 128px;
+width: 10vw;
 }
 header .container{
     z-index: 2;
@@ -26,9 +35,10 @@ header .container{
 header .container nav{
     display: flex;
     justify-content:flex-end;
+    flex-wrap: wrap;
     align-items: center;
-    width: 500px;
-    height: 60px;
+    width: 60%;
+    height: 20%;
 }
 header .container nav a{
     color: rgba(255, 0, 0, 0.733);
@@ -44,7 +54,7 @@ header .container nav a:hover{
     
 }
 #inicio{
-    height: 780px;
+    height: 60vw;
     background-image: url(../img/bannerprincipal.jpg);
     background-size: cover;
     align-items: center;
@@ -59,26 +69,26 @@ header .container nav a:hover{
     background-color: rgba(0, 0, 0, 0.575);
     left: auto;
     border: 1px solid rgba(0, 0, 0, 0.342);
-    width: 30rem;
+    width: 40vw;
     border-radius: 10px;
 }
 .bloque-inicio p{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.3vw;
     padding: 10px;
     text-align: center;
     margin: 0%;
 }
 .bloque-inicio img{
-    width: 150px;
+    width: 16vw;
 }
 .amplio{
-    width: 1500px;
-    height: 480px;
+    width: 80vw;
+    height: 40vw;
 }
 .boton{
     padding: 10px;
-    width: 100px;
+    width: 10vw;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -89,10 +99,10 @@ header .container nav a:hover{
 #nosotros{
     background-image: url(../img/latas.jpg);
     background-size: cover;
-    height: 800px;
+    height: 50vw;
 }
 #nosotros p {
-    font-size: 1.5em;
+    font-size: 1.6vw;
     color: white;
     width: 40%;
     margin: auto 10px auto 10px;
@@ -100,7 +110,7 @@ header .container nav a:hover{
 #nosotros img {
     z-index: 1;
     width: 35%;
-    border: 5px dotted black;
+    border-radius: 100%;
     opacity: 0.8;
     margin-right: 5%;
 }
@@ -110,30 +120,35 @@ header .container nav a:hover{
     border-radius: 10px;
     justify-content:center;
 }
-.container .tarjeta{
-    align-items:flex-end;
 
-}
 #servicios .container{
     padding: auto 10px;
 }
 .tarjeta{
     display: flex;
     flex-direction: column;
+    align-items:center;
     margin: 0px 10px;
-    padding: 10px 10px;
-    width: 33.33%;
-    height: 400px;
+    padding: 5px 5px;
+    width: 33.3%;
+    height: 32vw;
     border: 2px dotted black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.128);
 }
 .tarjeta p{
-    height: 55px;
+    text-align: center;
+    font-weight: 400;
+    height: 6vw;
+    font-size: 1.3vw;
 }
 .tarjeta img{
-    width: 400px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 #contactenos{
-    background-color: black;
+    
     align-items: center;
 }
 #contactenos h2{
@@ -144,6 +159,8 @@ header .container nav a:hover{
     margin-right: auto;
 }
 #contactenos .container{
+    position: relative;
+    top:10vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -163,11 +180,20 @@ header .container nav a:hover{
     height: 150px;
 }
 
-#galeria img{
-width: 33%;
-height: 250px;
+#promociones img{
+width: 32%;
+height: 30vw;
 }
 
-#galeria .container{
+#promociones .container{
     flex-direction: column;
+}
+
+footer .container{
+    justify-content: space-between;
+    background-color: black;
+    color:white;  
+}
+footer img{
+    width: 20vw;
 }
