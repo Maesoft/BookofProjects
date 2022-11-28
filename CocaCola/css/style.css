@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
     font-family: "Roboto";
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -9,10 +10,22 @@ a{
     font-weight: 500;
     font-size: 1.2vw;
 }
+a:visited{
+    color: white;
+}
+footer a:hover{
+    color: tomato;
+}
 p{
     font-family: "Roboto" ;
     font-weight: 300;
     font-size: 1.2vw;
+    user-select:text;
+    text-shadow: 1px 1px black;
+}
+p::selection {
+    background: black;
+    color: white;
 }
 .container{
     padding: 1.2vw;
@@ -120,11 +133,15 @@ header .container nav a:hover{
     border-radius: 10px;
     justify-content:center;
 }
-
+#servicios{
+    background-image: url(../img/fondo-servicios.png);
+    background-size: cover;
+}
 #servicios .container{
     position: relative;
-    top: 5vw;
-    padding: auto 10px;
+    top: 2vw;
+    height: 45vw;
+    justify-content: center;
 }
 .tarjeta{
     display: flex;
@@ -134,9 +151,10 @@ header .container nav a:hover{
     padding: 5px 5px;
     width: 33.3%;
     height: 32vw;
-    border: 2px dotted black;
+    border: 2px dotted #ffffff52;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.128);
+    background-color: rgb(0 0 0 / 80%);
+    color: white;
 }
 .tarjeta p{
     text-align: center;
@@ -149,8 +167,51 @@ header .container nav a:hover{
     border: 2px solid black;
     border-radius: 10px;
 }
+#promociones{
+    display: flex;
+    justify-content: center;
+    height: 53vw;
+}
+#promociones .container img{
+    width: 30vw;
+    height: 20vw;
+    filter: grayscale(1);
+}
+#promociones img:hover{
+    width: 30vw;
+    height: 20vw;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+#promociones .container{
+    flex-direction: column;
+    align-items:center;
+}
+footer .container{
+    justify-content: space-between;
+    background-color: black;
+    color:white;  
+}
+
+footer img{
+    width: 20vw;
+}   
+.size33{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    display: inline;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 #contactenos{
-    
     align-items: center;
 }
 #contactenos h2{
@@ -161,53 +222,46 @@ header .container nav a:hover{
     margin-right: auto;
 }
 #contactenos .container{
-    position: relative;
+    height: 45vw;
     top:10vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+#contactenos iframe{
+    border-radius: 100%;
+    box-shadow: 0px 10px 25px rgba(92,99,105,.2);
+}
+    
+.frmContactenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .formulario{
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2) ;
+}
+.campo{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.185);
-    width: 512px;
-    height: 300px;
-    padding: 20px;
+}
+#btnSend{
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+}
+ul img{
+    width: 16px;
+    height: 16px;
 }
 
-#txt{
-    height: 150px;
-}
-
-#promociones .container img{
-width: 30vw;
-height: 20vw;
-filter: grayscale(1);
-}
-#promociones img:hover{
-width: 30vw;
-height: 20vw;
-filter: grayscale(0);
-cursor: pointer;
-}
-
-#promociones .container{
-    position: relative;
-    top: 5vw;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:center;
-}
-
-footer .container{
-    justify-content: space-between;
-    background-color: black;
-    color:white;  
-}
-
-footer img{
-    width: 20vw;
-}   
